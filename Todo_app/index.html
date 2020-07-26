@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        .remove-btn{
+            display:none;
+        }
+        li.list-group-item:hover > .remove-btn{
+            display:block;
+  
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container"><br>
+        <h1>
+            To Do List
+        </h1><br>
+        <div class="row">
+            <div class="col-md-8">
+            <input type="text" class="form-control" id="Task_input">
+            </div>
+            <div class="col-md-4">
+                <a href="#" class="btn btn-success btn-s" onclick="addEvent()">Add Task</a>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-8">
+            <ul class="list-group" id="tasks">
+            </ul>
+        </div>
+        </div>
+    </div>
+
+</body>
+<script src="app.js"></script>
+</html>
